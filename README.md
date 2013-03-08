@@ -5,7 +5,7 @@ Simple bootstrap for a Sinatra project.
 
 Requirements
 -----------------
-Assumes you have `bundler` gem installed.
+Assumes you have the `bundler` gem installed.
 
 Install
 ----------------
