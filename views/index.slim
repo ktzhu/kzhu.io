@@ -6,9 +6,56 @@ html
     meta name='viewport' content='width=device-width, initial-scale=1.0'
     link rel='stylesheet' type='text/css' href='/assets/css/lib/bootstrap.css'
     link rel='stylesheet' type='text/css' href='/assets/css/lib/bootstrap-responsive.css'
+    link rel='stylesheet' type='text/css' href='/assets/css/index.css'
     link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,900italic|Open+Sans:300italic,300,600,800italic,800' rel='stylesheet' type='text/css'
     script src='/assets/js/lib/jquery-1.8.3.js'
     script src='/assets/js/lib/bootstrap.js'
 
   body
-    h1 Let's rap.
+    #topper
+
+    #container
+      #main
+        #sidebar-nav
+          a href="/"
+            #logo
+
+          ul#nav
+            li.current
+              a.about href="/about" About
+            li
+              a.work href="/work" Work
+            li
+              a.resume href="/resume" R&eacute;sum&eacute;
+
+        #content
+          #home-content
+            #hero
+              h2 Let's rap.
+              h4 Summertime Chi, throw your hands in the sky.
+
+            #blurb Rambles TK.
+
+      #sidebar
+        .headshot
+          a href="http://twitter.com/ktzhu" target="_new"
+            img src="/assets/img/headshot.png"
+        .contact
+          .title On the web
+          .content
+            p
+              a href="http://twitter.com/ktzhu" target="_new" @ktzhu
+            p
+              a href="http://github.com/ktzhu" target="_new" ktzhu+github
+            p
+              a href="http://instagram.com/ktzhu" target="_new" ktzhu+instagram
+            p
+              a href="http://rdio.com/people/ktzhu" target="_new" ktzhu+rdio
+            p
+              a href="http://foursquare.com/ktzhu" target="_new" ktzhu+4sq
+
+        .contact
+          .title Say sup
+          .content
+            p
+              a href="mailto:holla@kzhu.io" target="_new" holla@kzhu.io
