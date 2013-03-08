@@ -1,6 +1,6 @@
 # Load gems
 require 'rubygems'
-require 'sinatra/base'
+require 'sinatra'
 require 'sinatra/reloader'
 require 'json'
 require 'slim'
