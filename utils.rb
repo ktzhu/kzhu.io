@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
+require 'aws/s3'
+require 'uri'
 require 'slim'
 
 @html_layouts = Hash.new
@@ -15,3 +17,10 @@ end
   file = File.open("public/#{key}.html", 'w+')
   file.write(val)
 end
+
+AWS::S3::Base.establish_connection!(
+  :access_key_id => URI.parse(ENV['AWS_ACCESS_KEY']).to_s,
+  :secret_access_key => URI.parse(ENV['AWS_SECRET_KEY']).to_s
+)
+
+puts AWS::S3::Bucket.find('kzhu.io')
