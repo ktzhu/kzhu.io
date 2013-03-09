@@ -16,6 +16,18 @@ class App < Sinatra::Base
     slim :index
   end
 
+  get '/about' do
+    slim :about
+  end
+
+  get '/work' do
+    slim :work
+  end
+
+  get '/resume' do
+    slim :resume
+  end
+
   # Error handling
   not_found do
     'wat'

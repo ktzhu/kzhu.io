@@ -43,7 +43,6 @@ body {
   top: -25px;
   width: 100%;
   height: 509px;
-  background: url("/assets/img/topper.png") no-repeat center center;
   z-index: -10; }
 
 #container {
@@ -81,11 +80,11 @@ body {
         #main #sidebar-nav ul li.current a {
           padding-left: 0px; }
         #main #sidebar-nav ul li.current a.about, #main #sidebar-nav ul li a.about:hover {
-          border-left: 7px solid #ffd200; }
-        #main #sidebar-nav ul li.current a.work, #main #sidebar-nav ul li a.work:hover {
-          border-left: 7px solid #ed7702; }
-        #main #sidebar-nav ul li.current a.resume, #main #sidebar-nav ul li a.resume:hover {
           border-left: 7px solid #0099ff; }
+        #main #sidebar-nav ul li.current a.work, #main #sidebar-nav ul li a.work:hover {
+          border-left: 7px solid #ffd200; }
+        #main #sidebar-nav ul li.current a.resume, #main #sidebar-nav ul li a.resume:hover {
+          border-left: 7px solid #ed7702; }
         #main #sidebar-nav ul li a {
           width: 158px;
           padding-top: 15px;
@@ -141,3 +140,59 @@ body {
       font-size: 1.6em;
       font-weight: bold;
       line-height: 30px; }
+
+footer {
+  display: block;
+  width: 100%;
+  min-width: 1240px; }
+  footer .footer-border-bottom {
+    width: 100%;
+    border-bottom: 1px solid #cccccc; }
+  footer .footer-border-top {
+    width: 100%;
+    border-top: 1px solid white; }
+  footer .footer-contents {
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 23px; }
+    footer .footer-contents .logo-mini {
+      display: block;
+      float: left;
+      margin: 10px 78px 0px 21px;
+      width: 32px;
+      height: 28px;
+      background: url("/assets/img/logo.png") no-repeat center center;
+      background-size: cover; }
+    footer .footer-contents .links {
+      text-align: left;
+      float: left;
+      width: 322px; }
+      footer .footer-contents .links a {
+        color: darkgrey;
+        font-size: 1em;
+        display: block;
+        margin-bottom: -3px; }
+      footer .footer-contents .links .col {
+        width: 117px;
+        position: relative;
+        top: -4px; }
+    footer .footer-contents .social {
+      padding-left: 88px;
+      margin-top: 7px; }
+      footer .footer-contents .social .buttons a {
+        float: left; }
+      footer .footer-contents .social .buttons .twitter {
+        display: block;
+        background: url("/assets/img/twitter.png") no-repeat center center;
+        width: 32px;
+        height: 32px;
+        margin-right: 9px; }
+    footer .footer-contents .copyright {
+      display: block;
+      font-size: 0.9em;
+      color: darkgrey;
+      text-align: left;
+      width: 99px;
+      margin-left: 334px;
+      float: right; }
