@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'tilt', '1.3.5'
+gem 'aws-s3'
 gem 'sinatra', '1.3.5'
 gem 'sinatra-contrib'
 gem 'json', '1.7.7'
