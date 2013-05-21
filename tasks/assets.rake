@@ -6,6 +6,6 @@ namespace :assets do
 
   desc 'Watch Coffee scripts and compile new changes'
   task :scripts do
-    system 'coffee --watch assets/coffee/*.coffee'
+    system 'coffee --watch assets/coffeescript/*.coffee'
   end
 end
