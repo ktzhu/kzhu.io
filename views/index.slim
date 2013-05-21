@@ -7,75 +7,43 @@ html
     link rel='stylesheet' type='text/css' href='/assets/css/lib/bootstrap.css'
     link rel='stylesheet' type='text/css' href='/assets/css/lib/bootstrap-responsive.css'
     link rel='stylesheet' type='text/css' href='/assets/css/index.css'
-    link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,900italic|Open+Sans:300italic,300,600,800italic,800' rel='stylesheet' type='text/css'
+    link rel='stylesheet' type='text/css' href='/assets/css/animate.css'
+    link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:900italic|Open+Sans:300italic,300,600,800italic,800' rel='stylesheet' type='text/css'
     script src='/assets/js/lib/jquery-1.8.3.js'
     script src='/assets/js/lib/bootstrap.js'
+    script src='/assets/js/script.js'
 
   body
-    #container
-      #main
-        #sidebar-nav
-          a href="/"
-            #logo
+    section#container
+      section.slide#intro
+        section.text
+          h1 Katie Zhu
+          h2 I'm a design-conscious developer in Chicago.
+          p I study computers and journalism — always within close proximity to coffee. Currently helping build things @ NPR. General eyeballer + UI nerd.
 
-          ul#nav
-            li
-              a.about href="/about.html" About
-            li
-              a.work href="/work.html" Work
-            li
-              a.resume href="/resume.html" R&eacute;sum&eacute;
+      a.nav-about href="#about"
+        .tab.about
+          .text
+            h1 About
+            p +
 
-        #content
-          #home-content
-            #hero
-              h2 Let's rap.
-              h4 I'm Katie – Girl Gone Geek.
+      section.slide#about
 
-            #blurb Here is a cool useless fact about me! Rambles TK.
+      a.nav-work href="#work"
+        .tab.work
+          .text
+            h1 Work
+            p +
 
-      #sidebar
-        .headshot
-          a href="http://twitter.com/ktzhu" target="_new"
-            img src="/assets/img/headshot.png"
-        .contact
-          .title On the web
-          .content
-            p
-              a href="http://twitter.com/ktzhu" target="_new" @ktzhu
-            p
-              a href="http://github.com/ktzhu" target="_new" ktzhu+github
-            p
-              a href="http://instagram.com/ktzhu" target="_new" ktzhu+instagram
-            p
-              a href="http://rdio.com/people/ktzhu" target="_new" ktzhu+rdio
-            p
-              a href="http://foursquare.com/ktzhu" target="_new" ktzhu+4sq
+      section.slide#work
 
-        .contact
-          .title Say sup
-          .content
-            p
-              a href="mailto:holla@kzhu.io" target="_new" holla@kzhu.io
+      a.nav-contact href="#contact"
+        .tab.contact
+          .text
+            h1 Contact
+            p +
+
+      section.slide#contact
 
     footer
-      .footer-border-bottom
-      .footer-border-top
-      .footer-contents
-        .footer-logo
-          a href="/"
-            .logo-mini
-        .links
-          .col
-            a href="/about.html" About
-            a href="/work.html" Work
-            a href="/resume.html" R&eacute;sum&eacute;
-        .social
-          .buttons
-            a href="http://twitter.com/ktzhu" target="_new"
-              .twitter
-            a href="http://github.com/ktzhu" target="_new"
-              .github
-            a href="http://instagram.com/ktzhu" target="_new"
-              .instagram
-        p.copyright &copy; 2013 Katie Zhu
+      p.copyright &copy; 2013 Katie Zhu
