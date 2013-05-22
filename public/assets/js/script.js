@@ -3,34 +3,34 @@
   $(function() {
     $('#nav-about').click(function() {
       if ($(this).hasClass('expanded')) {
-        $('#about').hide();
+        $('#about').slideUp(1000);
         $(this).find('p').text('+');
         return $(this).removeClass('expanded');
       } else {
         $(this).addClass('expanded');
-        $('#about').show();
+        $('#about').slideDown(1000);
         return $(this).find('p').text('–');
       }
     });
     $('#nav-work').click(function() {
       if ($(this).hasClass('expanded')) {
-        $('#work').hide();
+        $('#work').slideUp(1000);
         $(this).find('p').text('+');
         return $(this).removeClass('expanded');
       } else {
         $(this).addClass('expanded');
-        $('#work').show();
+        $('#work').slideDown(1000);
         return $(this).find('p').text('–');
       }
     });
     return $('#nav-contact').click(function() {
       if ($(this).hasClass('expanded')) {
-        $('#contact').hide();
+        $('#contact').slideUp(1000);
         $(this).find('p').text('+');
         return $(this).removeClass('expanded');
       } else {
         $(this).addClass('expanded');
-        $('#contact').show();
+        $('#contact').slideDown(1000);
         return $(this).find('p').text('–');
       }
     });

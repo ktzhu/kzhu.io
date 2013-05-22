@@ -1,33 +1,33 @@
 $ ->
   $('#nav-about').click ->
     if $(@).hasClass('expanded')
-      $('#about').hide()
+      $('#about').slideUp(1000)
       $(@).find('p').text('+')
       $(@).removeClass 'expanded'
 
     else
       $(@).addClass('expanded')
-      $('#about').show()
+      $('#about').slideDown(1000)
       $(@).find('p').text('–')
 
   $('#nav-work').click ->
     if $(@).hasClass('expanded')
-      $('#work').hide()
+      $('#work').slideUp(1000)
       $(@).find('p').text('+')
       $(@).removeClass 'expanded'
 
     else
       $(@).addClass('expanded')
-      $('#work').show()
+      $('#work').slideDown(1000)
       $(@).find('p').text('–')
 
   $('#nav-contact').click ->
     if $(@).hasClass('expanded')
-      $('#contact').hide()
+      $('#contact').slideUp(1000)
       $(@).find('p').text('+')
       $(@).removeClass 'expanded'
 
     else
       $(@).addClass('expanded')
-      $('#contact').show()
+      $('#contact').slideDown(1000)
       $(@).find('p').text('–')
