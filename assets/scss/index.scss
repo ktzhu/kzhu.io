@@ -8,11 +8,12 @@ li { line-height: 20px; }
 h2 { font-size: 1em; margin-bottom: 30px; }
 
 h1 {
-  font: 400 87px/84px 'Abril Fatface', cursive;
+  font: 400 87px/100px 'Abril Fatface', cursive;
 }
 
 h2 {
-  font: 300 18px/24px "Open Sans", sans-serif;
+  font: 300 32px/36px "Open Sans", sans-serif;
+  font-style: italic;
 }
 
 
@@ -31,15 +32,15 @@ body {
     padding: 125px 0 150px 0;
   }
 
-  a.nav-about:hover { color: $burnt_orange; }
-  a.nav-work:hover { color: $bright_blue; }
-  a.nav-contact:hover { color: $yellow; }
+  a#nav-about:hover { color: $burnt_orange; }
+  a#nav-work:hover { color: $bright_blue; }
+  a#nav-contact:hover { color: $yellow; }
 
   .tab {
     display: block;
     width: 100%;
 
-    p {
+    p.nav {
       width: 20%;
       float: right;
       display: inline-block;
@@ -49,7 +50,7 @@ body {
     h1 {
       width: 80%;
       display: inline-block;
-      font: 900 40px/50px 'PLayfair Display', cursive;
+      font: 900 40px/50px 'Playfair Display', cursive;
       font-style: italic;
     }
 
@@ -77,22 +78,35 @@ body {
 
   .text {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
+    p {
+      font: 300 16px/20px 'Open Sans';
+    }
+
+    h3 {
+      font: 32px/40px 'Abril Fatface';
+      color: $grey;
+    }
+
+    h4 {
+      font: 600 32px/40px 'Open Sans';
+      color: $grey;
+    }
   }
 
   #about {
     display: none;
-    background: $burnt_orange;
+    padding: 100px 0 100px 0;
   }
 
   #work {
     display: none;
-    background: $bright_blue;
+    padding: 100px 0 100px 0;
   }
 
   #contact {
     display: none;
-    background: $yellow;
+    padding: 100px 0 100px 0;
   }
 }
 
