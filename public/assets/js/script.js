@@ -27,7 +27,7 @@
         return $(this).find('.text').css('color', '#ffd200');
       }
     });
-    return $('#nav-contact').click(function() {
+    $('#nav-contact').click(function() {
       if ($(this).hasClass('expanded')) {
         $('#contact').slideUp(1000);
         $(this).find('p').text('+');
@@ -40,6 +40,9 @@
         return $(this).find('.text').css('color', '#ed7702');
       }
     });
+    if (window.location.hash) {
+      return $(window.location.hash).trigger('click');
+    }
   });
 
 }).call(this);

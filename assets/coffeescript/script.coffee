@@ -37,3 +37,6 @@ $ ->
       $('#contact').slideDown(1000)
       $(@).find('p').text('–')
       $(@).find('.text').css('color', '#ed7702')
+
+  if window.location.hash
+    $(window.location.hash).trigger('click')
