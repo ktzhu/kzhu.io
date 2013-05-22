@@ -5,33 +5,39 @@
       if ($(this).hasClass('expanded')) {
         $('#about').slideUp(1000);
         $(this).find('p').text('+');
-        return $(this).removeClass('expanded');
+        $(this).removeClass('expanded');
+        return $(this).find('.text').css('color', '#444');
       } else {
         $(this).addClass('expanded');
         $('#about').slideDown(1000);
-        return $(this).find('p').text('–');
+        $(this).find('p').text('–');
+        return $(this).find('.text').css('color', '#0ac5f4');
       }
     });
     $('#nav-work').click(function() {
       if ($(this).hasClass('expanded')) {
         $('#work').slideUp(1000);
         $(this).find('p').text('+');
-        return $(this).removeClass('expanded');
+        $(this).removeClass('expanded');
+        return $(this).find('.text').css('color', '#444');
       } else {
         $(this).addClass('expanded');
         $('#work').slideDown(1000);
-        return $(this).find('p').text('–');
+        $(this).find('p').text('–');
+        return $(this).find('.text').css('color', '#ffd200');
       }
     });
     return $('#nav-contact').click(function() {
       if ($(this).hasClass('expanded')) {
         $('#contact').slideUp(1000);
         $(this).find('p').text('+');
-        return $(this).removeClass('expanded');
+        $(this).removeClass('expanded');
+        return $(this).find('.text').css('color', '#444');
       } else {
         $(this).addClass('expanded');
         $('#contact').slideDown(1000);
-        return $(this).find('p').text('–');
+        $(this).find('p').text('–');
+        return $(this).find('.text').css('color', '#ed7702');
       }
     });
   });

@@ -29,12 +29,12 @@ body {
   width: 100%;
 
   .slide {
-    padding: 125px 0 150px 0;
+    padding: 130px 0 130px 0;
   }
 
-  a#nav-about:hover { color: $burnt_orange; }
-  a#nav-work:hover { color: $bright_blue; }
-  a#nav-contact:hover { color: $yellow; }
+  a#nav-about:hover { color: $bright_blue; }
+  a#nav-work:hover { color: $yellow; }
+  a#nav-contact:hover { color: $burnt_orange; }
 
   .tab {
     display: block;
@@ -42,8 +42,9 @@ body {
 
     p.nav {
       float: right;
+      padding-right: 5%;
       display: inline-block;
-      font: 800 60px/50px 'Open Sans';
+      font: 800 60px/65px 'Open Sans';
     }
 
     h1 {
@@ -56,15 +57,15 @@ body {
     padding: 25px 0 25px 0;
 
     &.about {
-      border-left: 15px solid $burnt_orange;
-    }
-
-    &.work {
       border-left: 15px solid $bright_blue;
     }
 
-    &.contact {
+    &.work {
       border-left: 15px solid $yellow;
+    }
+
+    &.contact {
+      border-left: 15px solid $burnt_orange;
     }
   }
 
@@ -74,6 +75,11 @@ body {
     background-size: cover;
     background-position: center center;
     color: $white;
+    a {
+      color: $white;
+      font-style: italic;
+      font-weight: bold;
+    }
   }
 
 
@@ -81,7 +87,7 @@ body {
     margin: 0 auto;
     width: 80%;
     p {
-      font: 300 16px/20px 'Open Sans';
+      font: 300 16px/25px 'Open Sans';
     }
 
     h3 {
@@ -96,23 +102,26 @@ body {
   }
 
   #about {
+    border-left: 15px solid $bright_blue;
     display: none;
-    padding: 100px 0 100px 0;
+    padding: 20px 0 180px 0;
   }
 
   #work {
+    border-left: 15px solid $yellow;
     display: none;
-    padding: 100px 0 100px 0;
+    padding: 20px 0 180px 0;
   }
 
   #contact {
+    border-left: 15px solid $burnt_orange;
     display: none;
-    padding: 100px 0 100px 0;
+    padding: 20px 0 180px 0;
   }
 }
 
 footer {
-  padding: 50px;
+  padding: 30px;
   text-align: center;
 
   p {
