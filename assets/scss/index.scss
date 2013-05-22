@@ -41,7 +41,6 @@ body {
     width: 100%;
 
     p.nav {
-      width: 20%;
       float: right;
       display: inline-block;
       font: 800 60px/50px 'Open Sans';
@@ -71,8 +70,10 @@ body {
 
 
   #intro {
-    background: white;
-    border-left: 15px solid $ivory;
+    background: url('/assets/img/britishmuseum.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: $white;
   }
 
 
