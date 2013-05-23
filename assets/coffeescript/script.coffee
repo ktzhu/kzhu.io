@@ -4,7 +4,7 @@ $ ->
       $('#about').slideUp(1000)
       $(@).find('p').text('+')
       $(@).removeClass 'expanded'
-      $(@).find('.text').css('color', '#444')
+      $(@).find('.text').css('color', '#999')
 
     else
       $(@).find('.text').css('color', '#0ac5f4')
@@ -17,7 +17,7 @@ $ ->
       $('#work').slideUp(1000)
       $(@).find('p').text('+')
       $(@).removeClass 'expanded'
-      $(@).find('.text').css('color', '#444')
+      $(@).find('.text').css('color', '#999')
 
     else
       $(@).addClass('expanded')
@@ -30,7 +30,7 @@ $ ->
       $('#contact').slideUp(1000)
       $(@).find('p').text('+')
       $(@).removeClass 'expanded'
-      $(@).find('.text').css('color', '#444')
+      $(@).find('.text').css('color', '#999')
 
     else
       $(@).addClass('expanded')

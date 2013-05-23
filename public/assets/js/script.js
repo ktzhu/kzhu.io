@@ -6,7 +6,7 @@
         $('#about').slideUp(1000);
         $(this).find('p').text('+');
         $(this).removeClass('expanded');
-        return $(this).find('.text').css('color', '#444');
+        return $(this).find('.text').css('color', '#999');
       } else {
         $(this).find('.text').css('color', '#0ac5f4');
         $(this).addClass('expanded');
@@ -19,7 +19,7 @@
         $('#work').slideUp(1000);
         $(this).find('p').text('+');
         $(this).removeClass('expanded');
-        return $(this).find('.text').css('color', '#444');
+        return $(this).find('.text').css('color', '#999');
       } else {
         $(this).addClass('expanded');
         $('#work').slideDown(1000);
@@ -32,7 +32,7 @@
         $('#contact').slideUp(1000);
         $(this).find('p').text('+');
         $(this).removeClass('expanded');
-        return $(this).find('.text').css('color', '#444');
+        return $(this).find('.text').css('color', '#999');
       } else {
         $(this).addClass('expanded');
         $('#contact').slideDown(1000);
