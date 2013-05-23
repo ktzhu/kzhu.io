@@ -171,10 +171,11 @@ body {
     }
 
     h4 {
-      font: 600 32px/40px 'Open Sans';
+      font: 300 32px/40px 'Open Sans';
       color: $dark_grey;
       display: block;
       margin-bottom: 2%;
+      font-style: italic;
     }
   }
 
@@ -195,12 +196,12 @@ body {
       height: 20%;
 
       span.title {
-        font: 32px/50px 'Abril Fatface';
+        font: 24px/50px 'Abril Fatface';
         color: $dark_grey;
       }
 
       span.client {
-        font: 800 16px/20px 'Open Sans';
+        font: 800 14px/20px 'Open Sans';
         color: $grey;
       }
 
