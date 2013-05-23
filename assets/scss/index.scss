@@ -242,6 +242,7 @@ body {
     }
 
     .work-sample {
+      margin-top: 2%;
       height: 420px;
       padding: 15px;
       border: 1px solid $ivory;
@@ -344,9 +345,9 @@ footer {
     .work-info .excerpt {
       margin-top: 5%;
       margin-bottom: 5%;
-      .blurb { margin-bottom: 5%; }
     }
     .work-sample {
+      margin-top: 5%;
       margin-bottom: 5%;
     }
   }
@@ -354,7 +355,7 @@ footer {
   .tab p.nav { margin-top: -3%; }
 
   .text {
-    padding-left: 30px;
+    padding-left: 15px;
   }
 }
 
