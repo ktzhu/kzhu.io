@@ -252,6 +252,12 @@ body {
       -webkit-transition: opacity .25s ease-in-out;
       &:hover { opacity: 0.5; }
 
+      #resume {
+        height: 100%;
+        background: url('/assets/img/resume-screenshot.png') center center no-repeat;
+        background-size: contain;
+      }
+
       #good {
         height: 100%;
         background: url('/assets/img/good.png') center center no-repeat;
@@ -294,7 +300,22 @@ body {
     border-left: 15px solid $burnt_orange;
     display: none;
     padding: 20px 0 50px 0;
+    .social {
+      font: 24px/26px 'Abril Fatface';
+      a { color: $dark_grey; }
+    }
+    span {
+      font: 800 14px/20px 'Open Sans';
+      color: $grey;
+    }
+
+    span.description {
+      font: 300 14px/20px 'Open Sans';
+      color: $dark_grey;
+    }
   }
+
+  .resume .work-info { margin-bottom: 2%; }
 }
 
 footer {
