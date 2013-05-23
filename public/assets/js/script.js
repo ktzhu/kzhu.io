@@ -8,10 +8,10 @@
         $(this).removeClass('expanded');
         return $(this).find('.text').css('color', '#444');
       } else {
+        $(this).find('.text').css('color', '#0ac5f4');
         $(this).addClass('expanded');
         $('#about').slideDown(1000);
-        $(this).find('p').text('–');
-        return $(this).find('.text').css('color', '#0ac5f4');
+        return $(this).find('p').text('–');
       }
     });
     $('#nav-work').click(function() {

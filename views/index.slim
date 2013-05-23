@@ -11,16 +11,17 @@ html
     link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display:900italic|Open+Sans:300italic,300,600,800italic,800' rel='stylesheet' type='text/css'
     script src='/assets/js/lib/jquery-1.8.3.js'
     script src='/assets/js/lib/bootstrap.js'
-    script src='/assets/js/script.js'
 
   body
     section#container
       section.slide#intro
         section.text
-          h1 Katie Zhu
+          a.hed href="/"
+            h1 Katie Zhu
           h2 I'm a design-conscious developer currently in Chicago.
-          p I study computers and journalism — always within close proximity to coffee. I've built things for <a href="http://good.is">GOOD</a>, Northwestern's <a href="http://knightlab.northwestern.edu">Knight Lab</a>, and <a href="http://apps.npr.org">NPR</a>.
-          p I'm a general eyeballer who gets geeked about crafting delightful web applications and user experiences.
+          p I study computers and journalism — always within close proximity to coffee.
+          p I've built things for <a href="http://good.is">GOOD</a>, Northwestern's <a href="http://knightlab.northwestern.edu">Knight Lab</a>, and <a href="http://apps.npr.org">NPR</a>. I will be joining <a href="http://www.nytimes.com/">The New York Times</a> this summer and starting at <a href="http://twitter.com">Twitter</a> in the fall.
+          p I'm a general eyeballer who gets geeked about crafting delightful web applications and user experiences. Also, food and Beyonc&eacute;.
 
       a#nav-about href="#nav-about"
         .tab.about
@@ -30,8 +31,25 @@ html
 
       section.slide#about
         section.text
-          h4 Here is another thing
-          p Blah blahb odijfosifjdsiofodsfjdisfjiods
+          .row
+            .span10
+              h4 I believe in media and technology's ability to better the world around us.
+              br
+
+              p Technology has helped to bring the world closer together, and I'm interested in building tools to connect users and strengthen connections among individuals. I'm a big workflow nerd and I love to learn.
+              br
+
+              p  My interests include human-computer interaction, data visualization and interaction design. I was born and raised in the United States, spent my middle school years in Switzerland and Singapore and graduated from high school in Beijing. I speak English, French, Chinese, Python and Ruby.
+              br
+
+              p My passions are coding, designing and writing. As a reporter and programmer, I get to exercise both hemispheres of my brain – logic and analysis in addition to creativity and synthesis – in everything I do, whether it's pushing the boundaries of web client apps, writing an article or designing a user interface.
+              br
+
+              p I enjoy designing and building products at the intersection of news and technology, and am currently passionate about building tools for collaborative writing and version control in the newsroom. I was a finalist for the OpenNews fellowship and a recipient of the inaugural AP-Google scholarship.
+              br
+
+              p That's just what I do. In my spare time, I like to travel, cook and spend time with family and friends.
+              br
 
       a#nav-work href="#nav-work"
         .tab.work
@@ -41,9 +59,134 @@ html
 
       section.slide#work
         section.text
-          h3 Here is a thing
-          h4 Here is another thing
-          p Blah blahb odijfosifjdsiofodsfjdisfjiods
+          h4 Here are a few of my favorite projects:
+          .row
+            .work-info.span10
+              span.title GOOD Redesign /
+              a href="http://good.is" target="_blank"
+                span.client  GOOD
+              .skills
+                li +Ruby
+                li +Rails
+                li +Backbone.js
+                li +MySQL
+                li +Slim
+                li +SCSS
+                li +git
+                li +Jasmine
+                li +RSpec
+              .blurb
+                | In which I yap about what work I did
+            .work-sample.span10
+              a href="http://good.is" target="_blank"
+                #good
+
+            .work-info.span10
+              span.title GOOD Mobile /
+              a href="http://m.good.is" target="_blank"
+                span.client  GOOD
+              .skills
+                li +Ruby
+                li +Rails
+                li +MySQL
+                li +jQuery Mobile
+                li +jQuery
+                li +JavaScript
+                li +Slim
+                li +SCSS
+                li +git
+                li +RSpec
+              .blurb
+                | In which I yap about what work I did
+            .work-sample.span10
+              a href="http://m.good.is" target="_blank"
+                #good-mobile
+
+            .work-info.span10
+              span.title Dear Mr. President /
+              a href="http://apps.npr.org/inauguration" target="_blank"
+                span.client  NPR
+              .skills
+                li +Python
+                li +Flask
+                li +JavaScript
+                li +jQuery
+                li +Jinja
+                li +Bootstrap
+                li +LESS
+                li +git
+                li +AWS
+              .blurb
+                | In which I yap about what work I did
+            .work-sample.span10
+              a href="http://apps.npr.org/inauguration" target="_blank"
+                #npr-inaug
+
+            .work-info.span10
+              span.title Everything You Need To Know About The Best Picture Nominees /
+              a href="http://apps.npr.org/oscars2013/best_picture.html" target="_blank"
+                span.client  NPR
+              .skills
+                li +Python
+                li +Flask
+                li +JavaScript
+                li +jQuery
+                li +Jinja
+                li +Bootstrap
+                li +LESS
+                li +git
+                li +AWS
+              .blurb
+                | In which I yap about what work I did
+            .work-sample.span10
+              a href="http://apps.npr.org/oscars2013/best_picture.html" target="_blank"
+                #npr-oscars
+
+            .work-info.span10
+              span.title Buried In Grain /
+              a href="http://apps.npr.org/buried-in-grain" target="_blank"
+                span.client  NPR
+              .skills
+                li +Python
+                li +Flask
+                li +JavaScript
+                li +jQuery
+                li +Jinja
+                li +Bootstrap
+                li +LESS
+                li +git
+                li +AWS
+              .blurb
+                | In which I yap about what work I did
+            .work-sample.span10
+              a href="http://apps.npr.org/buried-in-grain" target="_blank"
+                #npr-grain
+
+            .work-info.span10
+              span.title Deals for Developers /
+              a href="http://apps.npr.org/deals-for-developers-wamu" target="_blank"
+                span.client  NPR and WAMU
+              .skills
+                li +Python
+                li +Flask
+                li +JavaScript
+                li +jQuery
+                li +Jinja
+                li +Bootstrap
+                li +LESS
+                li +git
+                li +AWS
+              .blurb
+                | In which I yap about what work I did
+            .work-sample.span10
+              a href="http://apps.npr.org/deals-for-developers-wamu" target="_blank"
+                #npr-wamu
+
+          h4 I write some things, sometimes
+          li <a href="http://blog.apps.npr.org/2013/02/14/app-template-redux.html">How to build a news app that never goes down and costs you practically nothing</a> / NPR apps blog
+          li <a href="https://medium.com/i-m-h-o/b8d43e4c204d">Re-thinking J-school</a>
+          li <a href="http://www.good.is/posts/genius-not-required-why-anyone-can-learn-to-code">Genius not required: Why anyone can learn to code</a> / GOOD
+          li <a href="http://journalists.org/2013/03/26/j-teams-lets-move-from-silos-to-pods/">J-teams, let’s move from silos to pods</a> / Online News Assocation
 
       a#nav-contact href="#nav-contact"
         .tab.contact
@@ -59,3 +202,5 @@ html
 
     footer
       p.copyright &copy; 2013 Katie Zhu
+
+    script src='/assets/js/script.js'

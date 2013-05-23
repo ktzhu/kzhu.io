@@ -7,10 +7,10 @@ $ ->
       $(@).find('.text').css('color', '#444')
 
     else
+      $(@).find('.text').css('color', '#0ac5f4')
       $(@).addClass('expanded')
       $('#about').slideDown(1000)
       $(@).find('p').text('–')
-      $(@).find('.text').css('color', '#0ac5f4')
 
   $('#nav-work').click ->
     if $(@).hasClass('expanded')

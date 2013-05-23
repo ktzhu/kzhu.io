@@ -2,10 +2,65 @@
 @import 'colors';
 @import 'clearfix';
 
-a { text-decoration: none; color: $dark_grey; }
+a#nav-about {
+  .text {
+    transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    &:hover {
+      color: $bright_blue !important;
+    }
+  }
+}
+
+a#nav-work {
+  .text {
+    transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    &:hover {
+      color: $yellow !important;
+    }
+  }
+}
+
+a#nav-contact {
+  .text {
+    transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    &:hover {
+      color: $burnt_orange !important;
+    }
+  }
+}
+
+a {
+  color: $dark_grey;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  &:hover {
+    opacity: 0.5;
+    text-decoration: none;
+  }
+}
+
+.hed h1 {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
 ul { padding: 0px; margin: 0 0 10px 25px; }
 li { line-height: 20px; }
 h2 { font-size: 1em; margin-bottom: 30px; }
+
 
 h1 {
   font: 400 87px/100px 'Abril Fatface', cursive;
@@ -25,16 +80,14 @@ body {
   // background: url('/assets/img/bg.png');
 }
 
+
 #container {
   width: 100%;
 
   .slide {
-    padding: 130px 0 130px 0;
+    padding: 120px 0 120px 0;
   }
 
-  a#nav-about:hover { color: $bright_blue; }
-  a#nav-work:hover { color: $yellow; }
-  a#nav-contact:hover { color: $burnt_orange; }
 
   .tab {
     display: block;
@@ -85,6 +138,7 @@ body {
 
   .text {
     margin: 0 auto;
+    height: 100%;
     width: 80%;
     p {
       font: 300 16px/25px 'Open Sans';
@@ -97,26 +151,115 @@ body {
 
     h4 {
       font: 600 32px/40px 'Open Sans';
-      color: $grey;
+      color: $dark_grey;
+      display: block;
+      margin-bottom: 2%;
     }
   }
 
   #about {
     border-left: 15px solid $bright_blue;
     display: none;
-    padding: 20px 0 180px 0;
+    padding: 20px 0 50px 0;
   }
 
   #work {
+    height: 100%;
     border-left: 15px solid $yellow;
     display: none;
-    padding: 20px 0 180px 0;
+    padding: 20px 0 50px 0;
+
+    .work-info {
+      display: block;
+      height: 20%;
+
+      span.title {
+        font: 32px/50px 'Abril Fatface';
+        color: $dark_grey;
+      }
+
+      span.client {
+        font: 800 16px/20px 'Open Sans';
+        color: $grey;
+      }
+
+      a { color: white; }
+
+      .skills {
+        display: block;
+        li {
+          list-style-type: none;
+          font-style: italic;
+          display: inline-block;
+          background: white;
+          color: $grey;
+          border-radius: 8px;
+          -moz-border-radius: 8px;
+          -webkit-border-radius: 8px;
+          margin-right: 5px;
+        }
+      }
+
+      .blurb {
+        font: 300 16px/20px 'Open Sans';
+        margin-bottom: 2%;
+      }
+    }
+
+    .work-sample {
+      height: 420px;
+      padding: 15px;
+      border: 1px solid $ivory;
+      margin-bottom: 3%;
+      opacity: 1;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
+      &:hover { opacity: 0.5; }
+
+      #good {
+
+        height: 100%;
+        background: url('/assets/img/good.png') center center no-repeat;
+        background-size: contain;
+      }
+
+      #good-mobile {
+        height: 100%;
+        background: url('/assets/img/good-mobile.png') center center no-repeat;
+        background-size: contain;
+      }
+
+      #npr-inaug {
+        height: 100%;
+        background: url('/assets/img/npr-inaug.png') center center no-repeat;
+        background-size: contain;
+      }
+
+      #npr-oscars {
+        height: 100%;
+        background: url('/assets/img/npr-oscars.png') center center no-repeat;
+        background-size: contain;
+      }
+
+      #npr-grain {
+        height: 100%;
+        background: url('/assets/img/npr-grain.png') center center no-repeat;
+        background-size: contain;
+      }
+
+      #npr-wamu {
+        height: 100%;
+        background: url('/assets/img/npr-wamu.png') center center no-repeat;
+        background-size: contain;
+      }
+    }
   }
 
   #contact {
     border-left: 15px solid $burnt_orange;
     display: none;
-    padding: 20px 0 180px 0;
+    padding: 20px 0 50px 0;
   }
 }
 
@@ -142,10 +285,42 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .tab p.nav { margin-top: -3%; }
+
   .text {
     padding-left: 30px;
   }
 }
 
 @media (max-width: 480px) {
+  #container {
+    #work .work-sample {
+      height: 320px;
+
+      #good {
+        background-size: cover;
+        background-position: left center;
+      }
+
+      #npr-inaug {
+        background-size: cover;
+        background-position: left center;
+      }
+
+      #npr-oscars {
+        background-size: cover;
+        background-position: left center;
+      }
+
+      #npr-grain {
+        background-size: cover;
+        background-position: left center;
+      }
+
+      #npr-wamu {
+        background-size: cover;
+        background-position: left center;
+      }
+    }
+  }
 }
