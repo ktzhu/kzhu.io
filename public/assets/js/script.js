@@ -10,7 +10,7 @@
       } else {
         $(this).find('.text').css('color', '#0ac5f4');
         $(this).addClass('expanded');
-        $('#about').slideDown(1000);
+        $('#about').show(1000);
         return $(this).find('p').text('–');
       }
     });
