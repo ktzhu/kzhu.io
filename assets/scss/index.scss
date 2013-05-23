@@ -344,6 +344,10 @@ footer {
     .work-info .excerpt {
       margin-top: 5%;
       margin-bottom: 5%;
+      .blurb { margin-bottom: 5%; }
+    }
+    .work-sample {
+      margin-bottom: 5%;
     }
   }
 
@@ -363,6 +367,7 @@ footer {
         margin-bottom: 10%;
       }
       .work-sample {
+        margin-bottom: 10%;
         height: 320px;
 
         #good {
