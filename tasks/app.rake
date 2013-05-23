@@ -4,5 +4,5 @@ task :run do
 end
 
 task :deploy do
-  system 'cd .. && s3cmd sync -r sinatrastrap s3://kzhu.io/'
+  system 's3cmd sync -r public s3://kzhu.io/'
 end
