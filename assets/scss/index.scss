@@ -136,10 +136,12 @@ body {
 
     &.work {
       border-left: 15px solid $yellow;
+      h1 { margin-left: -10px; }
     }
 
     &.contact {
       border-left: 15px solid $burnt_orange;
+      h1 { margin-left: -10px; }
     }
   }
 
@@ -220,6 +222,10 @@ body {
           -webkit-border-radius: 8px;
           margin-right: 5px;
         }
+      }
+
+      .quotation {
+        font: 50px/20px 'Open Sans';
       }
 
       .blurb {
