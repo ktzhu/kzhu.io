@@ -34,7 +34,5 @@ class App < Sinatra::Base
     'wat'
   end
 
-  if __FILE__ == $0
-    App.run! :port => 4000
-  end
+  App.run! :port => 4000
 end
